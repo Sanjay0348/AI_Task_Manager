@@ -49,7 +49,7 @@ langchain==0.2.14
 langchain-core==0.2.38
 langchain-google-genai==1.0.10
 google-generativeai==0.7.2
-
+psycopg2-binary
 # Redis
 redis==5.0.1
 
