@@ -1,0 +1,59 @@
+# Environment files
+.env
+.env.local
+.env.production.local
+.env.test.local
+
+# Docker volumes
+postgres_data/
+postgres_data_dev/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+backups/
+*.bak
+*.backup
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node.js
+node_modules/
+.next/
+out/
+build/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+
+venv/
