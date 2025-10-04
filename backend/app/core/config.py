@@ -5,9 +5,9 @@ import os
 
 class Settings(BaseSettings):
     # Database
-    database_url: str = "postgresql://postgres:postgres@localhost:5433/taskdb"
+    database_url: str = "postgresql://postgres:postgres@localhost:5432/taskdb"
     async_database_url: str = (
-        "postgresql+asyncpg://postgres:postgres@localhost:5433/taskdb"
+        "postgresql+asyncpg://postgres:postgres@localhost:5432/taskdb"
     )
 
     # Redis

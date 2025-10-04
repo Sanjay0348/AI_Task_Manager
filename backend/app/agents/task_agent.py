@@ -56,9 +56,6 @@ class TaskManagementAgent:
             logger.info(f"[agent_node] Processing user input: {user_input}")
             from google import generativeai as genai
 
-            genai.configure(api_key=settings.gemini_api_key)
-            for model in genai.list_models():
-                print(model.name)
             # System prompt
             system_prompt = """You are an AI-powered task management assistant. You help users manage their tasks through natural language commands.
 

@@ -8,6 +8,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # Create async engine
+print(settings.async_database_url, "----)))))))))))")
 async_engine = create_async_engine(
     settings.async_database_url,
     echo=settings.debug,
@@ -34,6 +35,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=sync_engine)
 
 Base = declarative_base()
 
+
 # Dependency to get async database session
 async def get_async_session() -> AsyncSession:
     async with async_session() as session:
@@ -44,6 +46,7 @@ async def get_async_session() -> AsyncSession:
             raise e
         finally:
             await session.close()
+
 
 # Dependency to get sync database session
 def get_db_session():
